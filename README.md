@@ -1,6 +1,8 @@
 Address book demo
 ==================
 
+Address book 是一个用来演示vuejs制作一个地址簿的代码片段。
+
 # Run
 
 浏览器打开 index.html
@@ -44,7 +46,9 @@ index.html的`<script src="dist/bundle.js"></script>`修改成`<script src="bund
 ，`app.js`保存视图组件的代码，比如增加、编辑删除等各项操作的行为方法。`app.js`调用`addressbooks.js`
 完成所有对数据对操作。
 
-*下一步分离对业务的响应和数据操作的代码*
+TODOs:
+
+> 分离Service和Model
 
 **src/addressbooks.js methods**
 
@@ -58,5 +62,5 @@ index.html的`<script src="dist/bundle.js"></script>`修改成`<script src="bund
 
 ## 脏数据
 
-参考`UnitWork` Martin folwer 的设计模式，标记修改的数据，并提供一个查询方法将所有的脏数据
-查询。调用的Client提交脏数据的修改。
+参考`UnitWork` Martin folwer 的设计模式，标记修改的数据，并提供一个查询所有的脏数据的方法。
+Client查询出脏数据然后提交修改。
